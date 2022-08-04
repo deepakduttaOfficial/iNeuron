@@ -3,7 +3,7 @@ import React from "react";
 const Searchbar = () => {
   return (
     <>
-      <div className="inline">
+      <div className="mt-3 me-3">
         <button
           type="button"
           className="btn search-icon"
@@ -22,9 +22,9 @@ const Searchbar = () => {
           aria-labelledby="staticBackdropLabel"
           aria-hidden="true"
         >
-          <div className=" modal-dialog modal-fullscreen-xxl-down">
-            <div className="modal-content ">
-              <div className="modal-header ">
+          <div className="modal-dialog modal-fullscreen-xxl-down">
+            <div className="modal-content">
+              <div className="modal-header">
                 <h5 className="modal-title" id="staticBackdropLabel">
                   Search
                 </h5>
@@ -35,7 +35,7 @@ const Searchbar = () => {
                   aria-label="Close"
                 ></button>
               </div>
-              <div className="modal-body container">
+              <div className="modal-body">
                 <div className="inner-addon left-addon pb-4">
                   <i className="bi bi-search modal-search-icon"></i>
                   <input

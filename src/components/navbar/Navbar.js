@@ -29,8 +29,8 @@ import MobileNav from "./MobileNav";
 
 const Navbar = () => {
   return (
-    <>
-      <div className="mobile-nav-collapse">
+    <div className="d-flex">
+      <div className="mobile-nav-collapse flex-grow-1">
         <MobileNav />
       </div>
       <nav className="navbar navbar-expand-lg navbar-light" id="collapse">
@@ -250,9 +250,9 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <Searchbar />
       </nav>
-    </>
+      <Searchbar />
+    </div>
   );
 };
 

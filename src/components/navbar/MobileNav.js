@@ -1,9 +1,8 @@
 import React from "react";
-import Searchbar from "./Searchbar";
 
 const MobileNav = () => {
   return (
-    <div className="d-flex space-between">
+    <div className="d-flex space-between flex-grow-1">
       <a
         class="flex-grow-1 inline"
         data-bs-toggle="offcanvas"
@@ -13,7 +12,6 @@ const MobileNav = () => {
       >
         <i class="bi bi-list" style={{ fontSize: "30px" }}></i>
       </a>
-      <Searchbar />
 
       <div
         class="offcanvas offcanvas-start"
