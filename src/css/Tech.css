@@ -1,0 +1,69 @@
+#tech {
+  background-color: #fbfeff;
+}
+.shadow-effect {
+  background: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid #ececec;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.img-circle {
+  border-radius: 50%;
+  vertical-align: middle;
+  transform-style: preserve-3d;
+  margin: 0 auto 17px;
+}
+#customer-testimonoals {
+  margin-top: 6%;
+}
+
+#customer-testimonoals .item {
+  text-align: center;
+  margin-bottom: 0px;
+  opacity: 0.2;
+  transform: scale3d(0.8, 0.8, 1);
+  transition: all 0.3s ease-in-out;
+}
+#customer-testimonoals .owl-item.active.center .item {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}
+
+.shadow-effect > h5 {
+  margin: 10px 0;
+  font-family: "Poppins", sans-serif;
+}
+.shadow-effect > p {
+  margin: 10px 0;
+  font-family: "Poppins", sans-serif;
+  color: #454545;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.bi-linkedin {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+  width: 2rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hall-view-more {
+  color: #000;
+  font-size: 17px;
+  cursor: pointer;
+  padding: 20px;
+}
+.hall-view-more > i {
+  margin-left: 6px;
+}
+
+.bi-youtube {
+  color: #ff3d00;
+  width: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 25px;
+}

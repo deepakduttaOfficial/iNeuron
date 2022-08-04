@@ -1,0 +1,4 @@
+.company-container {
+  padding: var(--defaultpadding);
+  background-color: #eef0f5;
+}
