@@ -123,3 +123,17 @@ button {
   left: 12px;
   font-size: 28px;
 }
+
+.mobile-nav-collapse {
+  padding: 10px 70px;
+  display: none;
+}
+
+@media screen and (max-width: 1360px) {
+  #collapse {
+    display: none !important;
+  }
+  .mobile-nav-collapse {
+    display: block;
+  }
+}

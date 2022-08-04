@@ -4,7 +4,7 @@ import "../../css/Header.css";
 const HeaderTextAnimation = () => {
   return (
     <div>
-      <h1 className="loading text-primary mt-5 fw-bolder fs-lg lh-sm header-heading">
+      <h1 className="loading text-primary mt-5 fw-bolder fs-lg lh-sm header-heading ">
         <span>H</span>
         <span>i</span>
         <span>g</span>
@@ -47,7 +47,7 @@ const HeaderTextAnimation = () => {
         <span>c</span>
         <span>e</span>
       </h1>
-      <p className="text-white mt-4">
+      <p className="text-white mt-4 text-center">
         Digital entrepreneurs, Youtubers and content creators provide affordable
         courses across technologies.
       </p>

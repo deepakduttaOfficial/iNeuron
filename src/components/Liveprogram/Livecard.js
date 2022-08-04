@@ -9,15 +9,20 @@ import Datamanagement from "../../images/nav-icon/Datamanagement.png";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import { useCurrentWidth } from "react-breakpoints-hook";
 
 const Livecard = () => {
+  let width = useCurrentWidth();
+  let mdwidth = width < 1285;
+  let smwidth = width < 900;
+
   return (
     <>
       <OwlCarousel
         className="owl-theme"
         loop
         navSpeed={100}
-        items={3}
+        items={mdwidth ? (smwidth ? 1 : 2) : 3}
         margin={15}
         dots={false}
         autoplay={true}

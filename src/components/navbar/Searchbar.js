@@ -3,7 +3,7 @@ import React from "react";
 const Searchbar = () => {
   return (
     <>
-      <div>
+      <div className="inline">
         <button
           type="button"
           className="btn search-icon"

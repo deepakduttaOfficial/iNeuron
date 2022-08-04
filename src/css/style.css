@@ -36,3 +36,17 @@ a {
 ::-webkit-scrollbar-thumb {
   background: #f7a654;
 }
+
+.spinner {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.spinner > img {
+  position: absolute;
+  height: 35px;
+}

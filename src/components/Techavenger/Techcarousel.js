@@ -4,7 +4,11 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "../../css/Tech.css";
+import { useCurrentWidth } from "react-breakpoints-hook";
 const Techcarousel = () => {
+  let width = useCurrentWidth();
+  let mdwidth = width < 1200;
+  let smwidth = width < 992;
   const users = [
     {
       name: "Sudhanshu Kumar",
@@ -49,10 +53,10 @@ const Techcarousel = () => {
         items: 1,
       },
       600: {
-        items: 3,
+        items: mdwidth ? (smwidth ? 1 : 2) : 3,
       },
       1000: {
-        items: 3,
+        items: mdwidth ? (smwidth ? 1 : 2) : 3,
       },
     },
   };

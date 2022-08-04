@@ -144,6 +144,7 @@ span {
 .hero-influencers1 {
   height: auto;
   width: 60%;
+  z-index: 100;
 }
 .hero-influencers2 {
   height: auto;
@@ -152,4 +153,19 @@ span {
 
 .header {
   padding: 60px var(--defaultpadding);
+}
+
+.carousel-inner {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1306px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-heading {
+    text-align: center;
+  }
 }

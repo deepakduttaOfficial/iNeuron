@@ -9,7 +9,14 @@ import Hall2 from "../../images/Hall/Hall2.jpeg";
 import Hall3 from "../../images/Hall/Hall3.jpeg";
 import Hall4 from "../../images/Hall/Hall4.jpeg";
 
+import { useCurrentWidth } from "react-breakpoints-hook";
+
 const Hallcarousel = () => {
+  let width = useCurrentWidth();
+
+  let mdbreack = width < 1200;
+  let smbreack = width < 768;
+
   const users = [
     {
       name: "Sameer Kumar",
@@ -52,10 +59,10 @@ const Hallcarousel = () => {
         items: 1,
       },
       600: {
-        items: 3,
+        items: mdbreack ? (smbreack ? 1 : 2) : 3,
       },
       1000: {
-        items: 3,
+        items: mdbreack ? (smbreack ? 1 : 2) : 3,
       },
     },
   };

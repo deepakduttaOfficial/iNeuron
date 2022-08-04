@@ -25,16 +25,20 @@ import Faq from "../../images/nav-icon/Faq.png";
 import Assistant from "../../images/nav-icon/Assistant.png";
 
 import Searchbar from "./Searchbar";
+import MobileNav from "./MobileNav";
 
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light">
+      <div className="mobile-nav-collapse">
+        <MobileNav />
+      </div>
+      <nav className="navbar navbar-expand-lg navbar-light" id="collapse">
         <div className="container-fluid">
           <a className="navbar-brand me-5" href="/">
             <img src={Logo} alt="" />
           </a>
-          <div className="collapse navbar-collapse" id="navbarNav">
+          <div className="collapse navbar-collapse">
             <ul className="navbar-nav">
               <li className="nav-item">
                 <a
